@@ -28,9 +28,7 @@ client.connect(err => {
 
 
 
-app.listen(port,()=>{
-    console.log(`Back End is running at http://localhost:, ${port}`)
-})
+app.listen(process.env.PORT || port)
 
 
 
