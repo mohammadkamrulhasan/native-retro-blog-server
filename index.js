@@ -34,7 +34,8 @@ app.get('/', (req, res)=>{
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.fyzwt.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 console.log(uri);
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+    
+    const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
     console.log('connection err',err);
   const productsCollection = client.db("kamrulBlog").collection("blog");
@@ -43,6 +44,7 @@ client.connect(err => {
 
  
 });
+
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
