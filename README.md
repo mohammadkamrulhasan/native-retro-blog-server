@@ -1,5 +1,5 @@
 # native-retro-blog-server
-<a href="https://native-retro-blog.web.app" alt="">Live Link</a>
+<a href="https://native-retro-blog.web.app" alt="">Live web Link</a>
 <br>
 <a href="https://github.com/mohammadkamrulhasan/kamruls-blog" alt="">Client-side Code Link</a>
 
